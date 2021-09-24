@@ -1,6 +1,7 @@
 package vendormachine.users.util;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -21,13 +22,25 @@ public class WalletTest {
 	}
 
 	@Test
-	void testconstructor1() {
-		String expected = "Generic";
-		assertEquals(expected, wallet.getBrand());
+	void constructorInstanceTest1() {
+		assertTrue(wallet instanceof Wallet);
 	}
 
 	@Test
-	void testconstructor2() {
+	void constructorTest1() {
+		String expected = "Generic";
+		assertEquals(expected, wallet.getBrand());
+	}
+	
+	@Test
+	void constructorInstanceTest2() {
+		float storedCredit = 20.0f;
+		wallet = new Wallet(storedCredit);
+		assertTrue(wallet instanceof Wallet);
+	}
+
+	@Test
+	void constructorTest2() {
 		String expected = "Generic";
 		float storedCredit = 20.0f;
 		wallet = new Wallet(storedCredit);
@@ -35,15 +48,23 @@ public class WalletTest {
 	}
 
 	@Test
-	void testconstructor3() {
+	void constructorTest3() {
 		float expected = 20.0f;
 		float storedCredit = 20.0f;
 		wallet = new Wallet(storedCredit);
 		assertEquals(expected, wallet.getAllCredit());
 	}
+	
+	@Test
+	void constructorInstanceTest3() {
+		String brand = "Test";
+		float storedCredit = 20.0f;
+		wallet = new Wallet(brand, storedCredit);
+		assertTrue(wallet instanceof Wallet);
+	}
 
 	@Test
-	void testconstructor4() {
+	void constructorTest4() {
 		String expected = "Test";
 		String brand = "Test";
 		float storedCredit = 20.0f;
@@ -52,7 +73,7 @@ public class WalletTest {
 	}
 
 	@Test
-	void testconstructor5() {
+	void constructorTest5() {
 		float expected = 20.0f;
 		String brand = "Test";
 		float storedCredit = 20.0f;
