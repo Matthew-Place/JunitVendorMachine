@@ -41,8 +41,8 @@ Goals:
  "Add and complete tests for the 'vendormachine' project."
  
 Goals: 
-- [o] Achieve 80% or more 80% project code coverage.
-- [o] Analyse code and add missing methods. (TDD)
+- [x] Achieve 80% or more 80% project code coverage.
+- [x] Analyse code and add missing methods. (TDD)
 
 ---
 
