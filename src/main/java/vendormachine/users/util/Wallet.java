@@ -47,7 +47,7 @@ public class Wallet {
         return this.storedCredit;
     }
 
-    public String getBrand() {
+    public String getBrand(String band) {
         return this.brand;
     }
 
