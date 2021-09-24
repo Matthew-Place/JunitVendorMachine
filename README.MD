@@ -22,7 +22,7 @@ Complete the tasks below...
 "Test the `Wallet` class from:    `vendormachine.users.util.Wallet`."
 	  	
 Goal: 
-- [o] Achieve 80% or more code/line coverage for the 'Wallet' class.
+- [x] Achieve 80% or more code/line coverage for the 'Wallet' class.
 
 ---
 
@@ -31,8 +31,8 @@ Goal:
 "Test the `DrinkVendingMachine` class from:	`vendormachine.vendors.DrinkVendingMachine`."
 
 Goals: 
-- [o] Achieve 80% or more code/line coverage for the `DrinkVendingMachine` class.
-- [o] Analyse code and add missing methods. (TDD)
+- [x] Achieve 80% or more code/line coverage for the `DrinkVendingMachine` class.
+- [x] Analyse code and add missing methods. (TDD)
 
 ---
 
